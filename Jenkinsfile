@@ -12,6 +12,8 @@ pipeline {
     stage('Checkout Source') {
       steps {
         git 'https://github.com/lesterjaviergs/jenkins-kubernetes-deployment'
+        git credentialsId: '43015232-6043-4148-9399-8254b47c7348',
+        url: 'https://github.com/lesterjaviergs/jenkins-kubernetes-deployment'
       }
     }
 
